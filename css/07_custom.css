@@ -3,7 +3,7 @@
 
 *{
 --title-font:"Inter Tight";
---primary-color: #B8FF65;
+--primary-color: #000000;
 --primary-color-rgb: 184, 255, 101;
 --secondary-color: #B8FF65;
 --secondary-color-rgb: 184, 255, 101;
@@ -11,6 +11,7 @@
 --bg-light: #F3F3F3;
 --body-font-color:#929191;
 --body-font-size: 17px;
+/* --title-font-color: white; */
 --title-font-color: #000000;
 --title-font-weight: bold;
 }
@@ -28,12 +29,16 @@ font-weight: 500;
     display: none;
 }
 
-.d-menu-1 li.active{
+.d-menu-1 li.active {
     background: var(--primary-color);
     padding: 0 20px;
-    border-radius:30px;
-    -moz-border-radius:30px;
-    -webkit-border-radius:30px;
+    border-radius: 30px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+}
+
+.d-menu-1 li.active a {
+    color: #ffffff !important;
 }
 
 a.btn-main,
