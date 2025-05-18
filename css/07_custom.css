@@ -30,7 +30,8 @@ font-weight: 500;
 }
 
 .d-menu-1 li.active {
-    background: var(--primary-color);
+    /* background: var(--primary-color); */
+    /* color:  var(--primary-color) !important; */
     padding: 0 20px;
     border-radius: 30px;
     -moz-border-radius: 30px;
@@ -38,7 +39,8 @@ font-weight: 500;
 }
 
 .d-menu-1 li.active a {
-    color: #ffffff !important;
+    color: var(--primary-color);
+    font-weight: 700;
 }
 
 a.btn-main,

@@ -13740,7 +13740,7 @@ ul,ol{
 }
 
 .d-menu-1 li a{
-  color:var(--title-font-color);
+  color: #909294;
   font-weight: 800;
   text-transform: uppercase;
   position: relative;
