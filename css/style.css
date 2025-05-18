@@ -256,7 +256,7 @@ header.autoshow.scrollOn {
 }
 
 header.autoshow.scrollOff {
-  opacity: ;
+  /* opacity: ; */
   top: -120px;
 }
 
@@ -364,8 +364,6 @@ header.header-center #logo{
   margin-top: 0px;
 }
 
-header.smaller div#logo,
-header.s2 div#logo {}
 
 header.smaller .logo-init {
   display: none;
@@ -2913,13 +2911,13 @@ a.btn-lg{
   margin: 0;
   padding: 0;
   margin-bottom: 0px;
-  line-height: 1em;x
-  letter-spacing: -.5px;
+  line-height: 1em;
+  /* letter-spacing: -.5px; */
 }
 
 
 .de_count h4 {
-  margin-top: 0;
+  margin-top: 10px;
   font-size: 16px;
   font-weight: 500;
 }
@@ -3989,7 +3987,7 @@ span.teaser {
 
 .ul-style-4 li {
   margin: 2px 0 2px 0;
-  display: ;
+  /* display: ; */
   font-weight: 500;
 }
 
@@ -4615,8 +4613,7 @@ ol.ol-style-1.secondary li::before{
 }
 
 .pricing-s2.text-light .top .price,
-.pricing-s2.text-white .top .price,
-  {
+.pricing-s2.text-white .top .price{
   color: #ffffff;
 }
 
@@ -8568,7 +8565,8 @@ footer .widget{
   border-color: #555;
 }
 
-.widget_tags li a:hover border-color: #eceff3;
+.widget_tags li a:hover {
+  border-color: #eceff3;
 }
 
 footer .widget {
@@ -8989,7 +8987,7 @@ i.bg-color-secondary {
 
 
 .de-step-s1 {
-  overflow: ;
+  /* overflow: ; */
   position: relative;
   padding: 30px;
   height: 100%;
@@ -9132,7 +9130,7 @@ i.bg-color-secondary {
 
 
 .owl-carousel.no-hide .owl-stage-outer{
-  overflow: visible; !important;
+  overflow: visible !important;
 }
 
 .c-item{
