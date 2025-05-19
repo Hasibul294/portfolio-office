@@ -98,8 +98,28 @@
                                     </div>
                                 </div>
 
-                                <div class="text-white p-4 my-4">
-                                    <ul class="lh-lg fs-6 text-">
+                                <div class="text-white p-4 mt-4 mb-5">
+                                    <style>
+                                        /* Default (mobile-first) */
+                                        .responsive-font {
+                                            font-size: 14px;
+                                        }
+
+                                        /* Medium screen and up (≥768px) */
+                                        @media (min-width: 768px) {
+                                            .responsive-font {
+                                                font-size: 16px;
+                                            }
+                                        }
+
+                                        /* Large screen and up (≥992px) */
+                                        @media (min-width: 992px) {
+                                            .responsive-font {
+                                                font-size: 18px;
+                                            }
+                                        }
+                                    </style>
+                                    <ul class="lh-lg responsive-font">
                                         <li><strong>Founder & CEO</strong>, Shooting Star Ltd.</li>
                                         <li><strong>Chairman</strong>, Bit Byte Technology Ltd.</li>
                                         <li><strong>Founder & CEO</strong>, ADON Communications Ltd.</li>
