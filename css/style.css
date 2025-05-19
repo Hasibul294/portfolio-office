@@ -14540,6 +14540,15 @@ img {
   .slider_text {
     padding-top: 0px;
   }
+  .fs-md-24{
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .fs-md-24{
+    font-size: 20px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
