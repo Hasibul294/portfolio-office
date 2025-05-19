@@ -15680,3 +15680,23 @@ img {
   }
 }
 
+
+/* Calendly Modal Styles */
+#calendlyModal .modal-content {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#calendlyModal .modal-header {
+  border-bottom: none;
+  padding: 1rem 1.5rem;
+}
+
+#calendlyModal .modal-body {
+  padding: 0;
+}
+
+#calendly-embed .calendly-inline-widget {
+  min-height: 600px;
+}
+

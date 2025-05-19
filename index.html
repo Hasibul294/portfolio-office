@@ -19,7 +19,25 @@
     <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css">
     <!-- color scheme -->
     <link href="css/07_custom.css" rel="stylesheet" type="text/css">
+
+    <!-- calendly setup -->
+    <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </head>
+
+<!-- Calendly Modal -->
+<div class="modal fade" id="calendlyModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content" style="height: 700px;">
+            <div class="modal-header">
+                <h5 class="modal-title">Schedule a Meeting</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <div id="calendly-embed" style="height: 100%; width: 100%;"></div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <body>
     <div id="wrapper">
@@ -105,11 +123,15 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-12 text-center">
                             <h1 class="fs-120 fs-xs-60 text-resize-h1 lh-0-75 mb-4">Didarul<br>Alam</h1>
-                            <h4 class="id-color bg-dark d-inline-block rounded-pill py-4 px-5 fs-16 text-white">
-                                schedule
-                                a
-                                meeting</h4>
-                            <!-- <div class="spacer-single"></div> -->
+                            <!-- <button class="border-0 bg-dark rounded-pill py-4 px-5 text-uppercase text-white fw-500"
+                                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/hasibulhasan294/30min'});return false;">
+                                Schedule a Meeting
+                            </button> -->
+
+                            <button class="border-0 bg-dark rounded-pill py-4 px-5 text-uppercase text-white fw-500"
+                                data-bs-toggle="modal" data-bs-target="#calendlyModal" onclick="loadCalendly()">
+                                Schedule a Meeting
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -211,37 +233,37 @@
                                 <div class="col-md-6 mb-4">
                                     <div class="de_count bg-light py-4 rounded-1 text-center fs-15 wow fadeInRight"
                                         data-wow-delay=".0s">
-                                        <h3 class="fs-48 mb-1"><span class="timer" data-to="8240"
-                                                data-speed="3000">0</span>
+                                        <h3 class="fs-48 mb-1"><span>$</span><span class="timer" data-to="50"
+                                                data-speed="3000">0</span><span>M</span>
                                         </h3>
-                                        <div class="fs-15">Hours of Works</div>
+                                        <div class="fs-15">Income Generated​</div>
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <div class="de_count bg-light py-4 rounded-1 text-center fs-15 wow fadeInRight"
                                         data-wow-delay=".2s">
-                                        <h3 class="fs-48 mb-1"><span class="timer" data-to="315"
-                                                data-speed="3000">0</span>
+                                        <h3 class="fs-48 mb-1"><span class="timer" data-to="1000"
+                                                data-speed="3000">0</span><span>+</span>
                                         </h3>
-                                        <div class="fs-15">Projects Done</div>
+                                        <div class="fs-15">Youth Trained​</div>
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <div class="de_count bg-light py-4 rounded-1 text-center fs-15 wow fadeInRight"
                                         data-wow-delay=".4s">
-                                        <h3 class="fs-48 mb-1"><span class="timer" data-to="250"
-                                                data-speed="3000">0</span>
+                                        <h3 class="fs-48 mb-1"><span class="timer" data-to="30"
+                                                data-speed="3000">0</span><span>%</span>
                                         </h3>
-                                        <div class="fs-15">Satisfied Customers</div>
+                                        <div class="fs-15">Export Growth​</div>
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <div class="de_count bg-light py-4 rounded-1 text-center fs-15 wow fadeInRight"
                                         data-wow-delay=".6s">
-                                        <h3 class="fs-48 mb-1"><span class="timer" data-to="32"
-                                                data-speed="3000">0</span>
+                                        <h3 class="fs-48 mb-1"><span class="timer" data-to="20"
+                                                data-speed="3000">0</span><span>%</span>
                                         </h3>
-                                        <div class="fs-15">Awards Winning</div>
+                                        <div class="fs-15">Cost Reduction​</div>
                                     </div>
                                 </div>
                             </div>
@@ -291,56 +313,63 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem ullam aliquid ex molestias,
-                            quisquam rerum animi itaque illo saepe labore, quibusdam aliquam. Voluptates dicta
-                            laudantium delectus quos dolor quas suscipit quisquam commodi consectetur quam veritatis
-                            ullam ducimus eveniet officiis repudiandae quidem tenetur sequi dolore, quia culpa? A id
-                            amet dicta.
+                            Sunny's leadership extends beyond his own ventures to nurturing Bangladesh's broader
+                            innovation ecosystem. By connecting local talent with global platforms, he has helped
+                            showcase Bangladeshi innovation on the world stage.
                         </div>
                     </div>
                     <div class="row g-4">
                         <div class="col-md-4 col-lg-3 text-center wow fadeInRight" data-wow-delay=".4s">
                             <div class="p-4 py-lg-5 py-4 bg-light h-100 rounded-1">
                                 <h6>2022 – Present</h6>
-                                <h3>Lead Website Designer</h3>
-                                <p class="mb-0">Tech Solutions Inc</p>
+                                <p>Pioneering e-commerce enablement and digital
+                                    transformation
+                                    strategies for
+                                    businesses of all sizes, from startups to established enterprises.​​</p>
+                                <h6 class="mb-0">Digital Commerce & Strategy​</h6>
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-3 text-center wow fadeInRight" data-wow-delay=".4s">
                             <div class="p-4 py-lg-5 py-4 bg-light h-100 rounded-1">
                                 <h6>2022 – Present</h6>
-                                <h3>Lead Website Designer</h3>
-                                <p class="mb-0">Tech Solutions Inc</p>
+                                <p>Shaping the regulatory environment to foster innovation and growth in
+                                    Bangladesh's technology sector through collaborative policy initiatives.​</p>
+                                <h6>ICT Policy & Ecosystem Development​</h6>
                             </div>
                         </div>
 
                         <div class="col-md-4 col-lg-3 text-center wow fadeInRight" data-wow-delay=".5s">
                             <div class="p-4 py-lg-5 py-4 bg-light h-100 rounded-1">
-                                <h6>2018 - 2022</h6>
-                                <h3>Mid-Level Website Designer</h3>
-                                <p class="mb-0">Creativo Web Agency</p>
+                                <h6>2022 – Present</h6>
+                                <p>Developing and implementing scalable software solutions, including ERP integration
+                                    for major enterprises like Shwapno, Bangladesh's largest retail chain.​​</p>
+                                <h6>SaaS Platforms & Enterprise Solutions​</h6>
                             </div>
                         </div>
 
                         <div class="col-md-4 col-lg-3 text-center wow fadeInRight" data-wow-delay=".6s">
                             <div class="p-4 py-lg-5 py-4 bg-light h-100 rounded-1">
-                                <h6>2016 - 2018</h6>
-                                <h3>Junior Website Designer</h3>
-                                <p class="mb-0">Rocket Web Services</p>
+                                <h6>2022 – Present</h6>
+                                <p>Leveraging cutting-edge technologies to create data-driven
+                                    solutions that provide
+                                    actionable insights for businesses and government initiatives.​​​</p>
+                                <h6>AI & Data Intelligence​​</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-3 text-center wow fadeInRight" data-wow-delay=".6s">
+                            <div class="p-4 py-lg-5 py-4 bg-light h-100 rounded-1">
+                                <h6>2018-2020</h6>
+                                <p>Played a key role in drafting this foundational policy in collaboration with the
+                                    Ministry of Commerce, BASIS, and e-CAB.​​</p>
+                                <h6 class="mb-0">National Digital Commerce Policy​</h6>
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-3 text-center wow fadeInRight" data-wow-delay=".6s">
                             <div class="p-4 py-lg-5 py-4 bg-light h-100 rounded-1">
                                 <h6>2016 - 2018</h6>
-                                <h3>Junior Website Designer</h3>
-                                <p class="mb-0">Rocket Web Services</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-3 text-center wow fadeInRight" data-wow-delay=".6s">
-                            <div class="p-4 py-lg-5 py-4 bg-light h-100 rounded-1">
-                                <h6>2016 - 2018</h6>
-                                <h3>Junior Website Designer</h3>
-                                <p class="mb-0">Rocket Web Services</p>
+                                <p>Led policy advocacy initiatives in critical areas including SaaS taxation, AI
+                                    integration, and freelancer reform.​</p>
+                                <h6 class="mb-0">BASIS Director (Two Terms)​</h6>
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-3 text-center wow fadeInRight" data-wow-delay=".6s">
@@ -744,6 +773,27 @@
     <script src="js/plugins.js"></script>
     <script src="js/designesia.js"></script>
     <script src="js/custom-marquee.js"></script>
+
+    <script>
+        function loadCalendly() {
+            // Only load Calendly when modal opens
+            if (document.getElementById('calendly-embed').innerHTML === '') {
+                Calendly.initInlineWidget({
+                    url: 'https://calendly.com/hasibulhasan294/30min',
+                    parentElement: document.getElementById('calendly-embed'),
+                    prefill: {},
+                    utm: {}
+                });
+            }
+        }
+
+        // Initialize Bootstrap modal behavior
+        var calendlyModal = document.getElementById('calendlyModal')
+        calendlyModal.addEventListener('hidden.bs.modal', function () {
+            // Optional: Clear Calendly when modal closes
+            document.getElementById('calendly-embed').innerHTML = '';
+        });
+    </script>
 
 </body>
 
