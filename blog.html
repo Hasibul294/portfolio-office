@@ -3,7 +3,7 @@
 
 <head>
     <title>Raymond Personal Trainer</title>
-    <link rel="icon" href="images/icon.webp" type="image/gif" sizes="16x16">
+    <link rel="icon" href="images/favicon.webp" type="image/gif" sizes="16x16">
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="description">
@@ -33,18 +33,65 @@
 
             <div id="top"></div>
 
-            <section class="p-4">
+            <section class="p-4 d-block d-sm-none">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-md text-uppercase" data-wow-delay=".3s">
+                        <div class="container-fluid">
+                            <!-- Brand or Logo -->
+                            <a class="ps-3 navbar-brand fw-bold fs-20 text-dark" href="index.html">Didarul
+                                Alam</a>
+
+                            <!-- Toggler button for mobile -->
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black"
+                                        viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.5 12.5a.5.5 0 010-1h13a.5.5 0 010 1h-13zm0-4a.5.5 0 010-1h13a.5.5 0 010 1h-13zm0-4a.5.5 0 010-1h13a.5.5 0 010 1h-13z" />
+                                    </svg>
+                                </span>
+                            </button>
+
+                            <!-- Collapsible content -->
+                            <div class="collapse navbar-collapse bg-black rounded-2 mt-2 vh-70 p-4 pb-5 z-3"
+                                id="navbarNav">
+                                <ul class="navbar-nav fs-14 fw-bold">
+                                    <li class="nav-item">
+                                        <a class="nav-link" style="color: var(--bs-tertiary-color);"
+                                            href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" style="color: var(--bs-tertiary-color);"
+                                            href="works.html">Projects</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link  text-white" href="blog.html">Blog</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" style="color: var(--bs-tertiary-color);"
+                                            href="contact.html">Lets't Talk</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </section>
+
+            <section class="p-4 d-none d-sm-block">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="text-center pt-3 text-uppercase d-menu-1 fs-14 fw-bold wow"
                                 data-wow-delay=".3s">
-                                <ul>
+                                <ul class="z">
                                     <li><a href="index.html">Home</a></li>
-                                    <!-- <li><a href="about.html">About Me</a></li> -->
-                                    <!-- <li><a href="services.html">What I Do</a></li> -->
+                                    <!-- <li><a href="#about">About Me</a></li>
+                                    <li><a href="#services">What I Do</a></li> -->
                                     <li><a href="works.html">Projects</a></li>
-                                    <li class="active"><a href="blog.html">Blog</a></li>
+                                    <li class="active text-dark"><a href="blog.html">Blog</a></li>
                                     <li><a href="contact.html">Lets't Talk</a></li>
                                 </ul>
                             </div>
@@ -295,10 +342,10 @@
         <!-- footer begin -->
         <footer>
             <!-- <img src="images/misc/scratches-3.webp" class="w-20 me-5 abs bottom-0 abs-center" alt=""> -->
-            <div class="container-fluid">
-                <div class="px-2">
+            <div class="container-fluid p-4">
+                <div class="">
                     <div class="row g-4 align-items-center">
-                        <div class="col-lg-6">
+                        <div class="col-md-6">
                             <div class="">
                                 <ul class="list-unstyled d-flex gap-4 text-uppercase fw-semibold">
                                     <li class="hover:fw-bold"><a class="text-dark hover:text-secondary"
@@ -312,9 +359,9 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-6 text-lg-end">
+                        <div class="col-md-6 text-lg-end">
                             <a href="contact.html">
-                                <h2 class="fs-84 fw-800 pe-3">Let's Talk
+                                <h2 class="fs-48 fs-md-60 fw-800 pe-3">Let's Talk
                                 </h2>
                             </a>
                         </div>
