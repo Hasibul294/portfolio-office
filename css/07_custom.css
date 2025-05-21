@@ -65,3 +65,24 @@ a.btn-main:hover{
 .owl-custom-nav .btn-next:before{
     color:#000000;
 }
+
+#scrollToTop {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 9999;
+  display: none; /* Start hidden */
+}
+
+#scrollToTop.show {
+  opacity: 1;
+  display: flex !important; /* Show when scrolled */
+}
+
+html {
+  scroll-behavior: smooth;
+}
