@@ -86,3 +86,35 @@ a.btn-main:hover{
 html {
   scroll-behavior: smooth;
 }
+
+.news-card .hover-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: auto;
+  z-index: 999;
+}
+
+.news-card:hover .hover-overlay {
+  opacity: 1;
+}
+
+.custom-media-btn {
+  border: 1px solid #f8f9fa; /* Bootstrap’s light color */
+  color: #fff;
+  padding: 0.25rem 0.5rem; /* Equivalent to px-2 py-1 */
+  border-radius: 0.3rem;    /* Equivalent to rounded-2 */
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-media-btn:hover {
+  background-color: white;
+  transform: scale(1.05);
+  color: #000000;
+}
