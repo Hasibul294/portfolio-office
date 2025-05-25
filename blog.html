@@ -143,7 +143,7 @@
 
             <section class="no-top px-4">
                 <div class="container-fluid">
-                    <div class="row g-4">
+                    <div id="news-container" class="row g-4">
                         <div class="col-lg-6">
                             <div class="rounded-1 bg-color text-dark overflow-hidden position-relative">
                                 <div class="row g-0">
@@ -624,7 +624,7 @@
                         <div class="col-lg-12 pt-4 text-center">
                             <div class="d-inline-block">
                                 <nav aria-label="Page navigation example">
-                                    <ul class="pagination light">
+                                    <ul class="pagination light" id="pagination">
                                         <li class="page-item">
                                             <a class="page-link" href="#" aria-label="Previous">
                                                 <span aria-hidden="true"><i class="fa fa-chevron-left"></i></span>
@@ -690,6 +690,91 @@
     <script src="js/plugins.js"></script>
     <script src="js/designesia.js"></script>
     <script src="js/custom-marquee.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const itemsPerPage = 6;
+            const container = document.getElementById("news-container");
+            const items = container.querySelectorAll(".col-lg-6");
+            const pagination = document.getElementById("pagination");
+            const totalPages = Math.ceil(items.length / itemsPerPage);
+
+            let isAnimating = false;
+
+            function showPage(page) {
+                if (isAnimating) return; // Prevent overlapping clicks
+                isAnimating = true;
+
+                // Fade out current items
+                items.forEach(item => {
+                    item.style.opacity = 0;
+                    item.style.transition = "opacity 0.3s ease";
+                });
+
+                // After fade-out delay, switch content and scroll
+                setTimeout(() => {
+                    items.forEach((item, index) => {
+                        item.style.display = "none";
+                        if (index >= (page - 1) * itemsPerPage && index < page * itemsPerPage) {
+                            item.style.display = "block";
+                            setTimeout(() => {
+                                item.style.opacity = 1;
+                            }, 10);
+                        }
+                    });
+
+                    // Scroll to top only after display updates
+                    setTimeout(() => {
+                        document.querySelector("#top").scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        isAnimating = false;
+                    }, 100); // Slight delay to ensure DOM update before scroll
+
+                }, 300); // Wait for fade-out
+
+                // Update pagination
+                pagination.innerHTML = "";
+
+                // Previous button
+                const prev = document.createElement("li");
+                prev.className = "page-item";
+                prev.innerHTML = `<a class="page-link" href="#"><i class="fa fa-chevron-left"></i></a>`;
+                prev.onclick = (e) => {
+                    e.preventDefault();
+                    if (page > 1) showPage(page - 1);
+                };
+                pagination.appendChild(prev);
+
+                // Page numbers
+                for (let i = 1; i <= totalPages; i++) {
+                    const li = document.createElement("li");
+                    li.className = "page-item" + (i === page ? " active" : "");
+                    const a = document.createElement("a");
+                    a.className = "page-link";
+                    a.href = "#";
+                    a.textContent = i;
+                    a.onclick = (e) => {
+                        e.preventDefault();
+                        showPage(i);
+                    };
+                    li.appendChild(a);
+                    pagination.appendChild(li);
+                }
+
+                // Next button
+                const next = document.createElement("li");
+                next.className = "page-item";
+                next.innerHTML = `<a class="page-link" href="#"><i class="fa fa-chevron-right"></i></a>`;
+                next.onclick = (e) => {
+                    e.preventDefault();
+                    if (page < totalPages) showPage(page + 1);
+                };
+                pagination.appendChild(next);
+            }
+
+            showPage(1);
+        });
+    </script>
+
 
 </body>
 
