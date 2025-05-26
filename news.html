@@ -656,8 +656,8 @@
                 </div>
             </section>
 
-            <section class="py-5 bg-light">
-                <div id="photo-gallery" class="px-4">
+            <section id="photo-gallery" class="py-5 bg-light">
+                <div class="px-4">
                     <h2 class="text-center mb-5">Photo Gallery</h2>
                     <div class="masonry-gallery">
                         <div class="masonry-item gallery-hover">
@@ -789,7 +789,7 @@
 
             let isAnimating = false;
 
-            function showPage(page) {
+            function showPage(page, shouldScroll = true) {
                 if (isAnimating) return; // Prevent overlapping clicks
                 isAnimating = true;
 
@@ -813,7 +813,9 @@
 
                     // Scroll to top only after display updates
                     requestAnimationFrame(() => {
-                        document.querySelector("#top").scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        if (shouldScroll) {
+                            document.querySelector("#top").scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
                         isAnimating = false;
                     });
                 }, 300); // Wait for fade-out
@@ -858,7 +860,7 @@
                 pagination.appendChild(next);
             }
 
-            showPage(1);
+            showPage(1, false);
         });
 
         const lightboxModal = document.getElementById('lightboxModal');
