@@ -86,6 +86,10 @@
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" style="color: var(--bs-tertiary-color);"
+                                            href="news.html#photo-gallery">Media Coverage</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" style="color: var(--bs-tertiary-color);"
                                             href="contact.html">Lets't Talk</a>
                                     </li>
                                 </ul>
@@ -109,6 +113,7 @@
                                     <li><a href="/#judge">Judge</a></li>
                                     <li><a href="/#key">Key Contribution</li>
                                     <li class="active text-dark"><a href="news.html">Media Coverage</a></li>
+                                    <li><a href="#photo-gallery">Gallery</a></li>
                                     <li><a href="contact.html">Lets't Talk</a></li>
                                 </ul>
                             </div>
@@ -490,6 +495,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-lg-6">
                             <div class="rounded-1 bg-color text-dark overflow-hidden position-relative w-100 h-100">
                                 <div class="row g-0 h-100">
@@ -577,6 +583,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-lg-6">
                             <div class="rounded-1 bg-color text-dark overflow-hidden position-relative w-100 h-100">
                                 <div class="row g-0 h-100">
@@ -650,129 +657,76 @@
             </section>
 
             <section class="py-5 bg-light">
-                <div class="container">
-                    <h2 class="text-center mb-5">Photo Gallery 1</h2>
-                    <div class="row g-4">
-
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="gallery-item overflow-hidden rounded shadow-sm">
-                                <img src="images/gallery/BASIS-award-2019.jpg"
-                                    class="img-fluid w-100 h-100 object-fit-cover" alt="Gallery Image 1"
-                                    data-bs-toggle="modal" data-bs-target="#lightboxModal"
-                                    data-bs-image="images/gallery/BASIS-award-2019.jpg">
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="gallery-item overflow-hidden rounded shadow-sm">
-                                <img src="images/gallery/china-dress.jpg" class="img-fluid w-100 h-100 object-fit-cover"
-                                    alt="Gallery Image 2" data-bs-toggle="modal" data-bs-target="#lightboxModal"
-                                    data-bs-image="images/gallery/china-dress.jpg">
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="gallery-item overflow-hidden rounded shadow-sm">
-                                <img src="images/gallery/hackathon.jpg" class="img-fluid w-100 h-100 object-fit-cover"
-                                    alt="Gallery Image 3" data-bs-toggle="modal" data-bs-target="#lightboxModal"
-                                    data-bs-image="images/gallery/hackathon.jpg">
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="gallery-item overflow-hidden rounded shadow-sm">
-                                <img src="images/gallery/space-florida.jpg"
-                                    class="img-fluid w-100 h-100 object-fit-cover" alt="Gallery Image 4"
-                                    data-bs-toggle="modal" data-bs-target="#lightboxModal"
-                                    data-bs-image="images/gallery/space-florida.jpg">
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="gallery-item overflow-hidden rounded shadow-sm">
-                                <img src="images/gallery/foraign-embessy.jpg"
-                                    class="img-fluid w-100 h-100 object-fit-cover" alt="Gallery Image 1"
-                                    data-bs-toggle="modal" data-bs-target="#lightboxModal"
-                                    data-bs-image="images/gallery/foraign-embessy.jpg">
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="gallery-item overflow-hidden rounded shadow-sm">
-                                <img src="images/gallery/soft-expo-2018.jpg"
-                                    class="img-fluid w-100 h-100 object-fit-cover" alt="Gallery Image 2"
-                                    data-bs-toggle="modal" data-bs-target="#lightboxModal"
-                                    data-bs-image="images/gallery/soft-expo-2018.jpg">
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="gallery-item overflow-hidden rounded shadow-sm">
-                                <img src="images/gallery/young-night.jpg" class="img-fluid w-100 h-100 object-fit-cover"
-                                    alt="Gallery Image 3" data-bs-toggle="modal" data-bs-target="#lightboxModal"
-                                    data-bs-image="images/gallery/young-night.jpg">
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="gallery-item overflow-hidden rounded shadow-sm">
-                                <img src="images/gallery/with-trophy.jpg" class="img-fluid w-100 h-100 object-fit-cover"
-                                    alt="Gallery Image 4" data-bs-toggle="modal" data-bs-target="#lightboxModal"
-                                    data-bs-image="images/gallery/with-trophy.jpg">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="py-5 bg-light">
-                <div class="px-4">
-                    <h2 class="text-center mb-5">Photo Gallery 2</h2>
+                <div id="photo-gallery" class="px-4">
+                    <h2 class="text-center mb-5">Photo Gallery</h2>
                     <div class="masonry-gallery">
-                        <div class="masonry-item">
-                            <img src="images/gallery/BASIS-award-2019.jpg" alt="Gallery Image 1" data-bs-toggle="modal"
-                                data-bs-target="#lightboxModal" data-bs-image="images/gallery/BASIS-award-2019.jpg">
+                        <div class="masonry-item gallery-hover">
+                            <img src="images/gallery/selected/BASIS-ict-awards-2019-2.jpg" loading="lazy"
+                                alt="Gallery Image 1">
+                            <div class="hover-overlay">
+                                <span class="hover-caption">BASIS National ICT Awards 2019</span>
+                            </div>
+                        </div>
+                        <div class="masonry-item gallery-hover">
+                            <img src="images/gallery/selected/china-dress.jpg" loading="lazy" alt="Gallery Image 2">
+                            <!-- <div class="hover-overlay">
+                                <span class="hover-caption">BASIS National ICT Awards</span>
+                            </div> -->
                         </div>
                         <div class="masonry-item">
-                            <img src="images/gallery/china-dress.jpg" alt="Gallery Image 2">
+                            <img src="images/gallery/selected/foraign-embessy.jpg" loading="lazy" alt="Gallery Image 3">
                         </div>
                         <div class="masonry-item">
-                            <img src="images/gallery/foraign-embessy.jpg" alt="Gallery Image 3">
+                            <img src="images/gallery/selected/hackathon.jpg" loading="lazy" alt="Gallery Image 4">
                         </div>
                         <div class="masonry-item">
-                            <img src="images/gallery//hackathon.jpg" alt="Gallery Image 4">
+                            <img src="images/gallery/selected/soft-expo-2020.jpg" loading="lazy" alt="Gallery Image 5">
                         </div>
                         <div class="masonry-item">
-                            <img src="images/gallery/soft-expo-2018.jpg" alt="Gallery Image 5">
+                            <img src="images/gallery/selected/space-florida.jpg" loading="lazy" alt="Gallery Image 6">
                         </div>
                         <div class="masonry-item">
-                            <img src="images/gallery/space-florida.jpg" alt="Gallery Image 6">
+                            <img src="images/gallery/selected/with-trophy.jpg" loading="lazy" alt="Gallery Image 7">
                         </div>
                         <div class="masonry-item">
-                            <img src="images/gallery/with-trophy.jpg" alt="Gallery Image 1" data-bs-toggle="modal"
-                                data-bs-target="#lightboxModal" data-bs-image="images/gallery/with-trophy.jpg">
+                            <img src="images/gallery/selected/young-night.jpg" loading="lazy" alt="Gallery Image 8">
                         </div>
                         <div class="masonry-item">
-                            <img src="images/gallery/young-night.jpg" alt="Gallery Image 2">
+                            <img src="images/gallery/selected/ICT-CAMP-side-view.jpg" loading="lazy"
+                                alt="Gallery Image 9">
                         </div>
                         <div class="masonry-item">
-                            <img src="images/gallery/ICT-CAMP-side-view.jpg" alt="Gallery Image 3">
+                            <img src="images/gallery/selected/receive-trophy.jpg" loading="lazy" alt="Gallery Image 10">
+                        </div>
+
+                        <div class="masonry-item">
+                            <img src="images/gallery/selected/DYDF-night.jpg" loading="lazy" alt="Gallery Image 11">
                         </div>
                         <div class="masonry-item">
-                            <img src="images/gallery/receive-trophy.jpg" alt="Gallery Image 4">
+                            <img src="images/gallery/selected/speak-with-mic.jpg" loading="lazy" alt="Gallery Image 12">
                         </div>
                         <div class="masonry-item">
-                            <img src="images/gallery/DMPC.jpg" alt="Gallery Image 5">
+                            <img src="images/gallery/selected/NY-trade-fair.jpg" loading="lazy" alt="Gallery Image 13">
+                        </div>
+
+                        <div class="masonry-item">
+                            <img src="images/gallery/selected/BASIS-2025.jpeg" loading="lazy" alt="Gallery Image 14">
                         </div>
                         <div class="masonry-item">
-                            <img src="images/gallery/curve-image.jpg" alt="Gallery Image 6">
+                            <img src="images/gallery/selected/getting-cresh.jpeg" loading="lazy" alt="Gallery Image 15">
                         </div>
+                        <div class="masonry-item">
+                            <img src="images/gallery/selected/with-ex-precident.jpg" loading="lazy"
+                                alt="Gallery Image 16">
+                        </div>
+
                         <!-- Add more images as needed -->
                     </div>
                 </div>
             </section>
 
             <!-- Lightbox Modal -->
-            <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+            <!-- <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-xl">
                     <div class="modal-content bg-dark border-0">
                         <div class="modal-body p-0">
@@ -780,7 +734,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
         </div>
         <!-- content close -->
@@ -858,11 +812,10 @@
                     });
 
                     // Scroll to top only after display updates
-                    setTimeout(() => {
+                    requestAnimationFrame(() => {
                         document.querySelector("#top").scrollIntoView({ behavior: 'smooth', block: 'start' });
                         isAnimating = false;
-                    }, 100); // Slight delay to ensure DOM update before scroll
-
+                    });
                 }, 300); // Wait for fade-out
 
                 // Update pagination

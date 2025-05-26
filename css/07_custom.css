@@ -125,19 +125,6 @@ html {
   color: #000000;
 }
 
-.gallery-item {
-  height: 250px;
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-.gallery-item img {
-  height: 100%;
-  object-fit: cover;
-}
-.gallery-item:hover {
-  transform: scale(1.05);
-  filter: brightness(90%);
-}
-
 /* For news and media coverage images gallery  */
 
 /* Masonry Gallery Layout */
@@ -170,7 +157,7 @@ html {
     overflow: hidden;
     border-radius: 8px;
     transition: transform 0.3s ease;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .masonry-item img {
@@ -183,4 +170,44 @@ html {
 .masonry-item:hover {
     transform: scale(1.03);
     filter: brightness(90%);
+}
+
+.gallery-hover {
+  position: relative;
+}
+
+/* Hover Effect */
+.gallery-hover .hover-overlay {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  transition: bottom 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-hover .hover-caption {
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 600;
+  padding: 40px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.4s ease;
+}
+
+.gallery-hover:hover .hover-overlay {
+  bottom: 0;
+}
+
+.gallery-hover:hover .hover-caption {
+  opacity: 1;
+  transform: translateY(0);
 }
