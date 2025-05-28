@@ -197,6 +197,7 @@ html {
   font-weight: 600;
   padding: 40px;
   letter-spacing: 1px;
+  line-height: normal;
   text-transform: uppercase;
   opacity: 0;
   transform: translateY(10px);
