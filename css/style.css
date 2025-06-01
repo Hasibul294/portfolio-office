@@ -14483,7 +14483,6 @@ img {
 
 /* R E S P O N S I V E */
 
-
 /* ================================================== */
 
 /* bootstrap cols 5 */
@@ -14504,7 +14503,6 @@ img {
 }
 /* bootstrap cols 5 end */
 
-
 @media (min-width: 1200px) {
 
   .container,
@@ -14514,6 +14512,14 @@ img {
   .container-xl {
     max-width: 1200px;
   }
+}
+
+@media (min-width: 1400px) {
+ .fs-xl-30{
+    font-size: 25px;
+    line-height: 1.5em;
+  }
+  /* .lh-1{line-height: 1em;} */
 }
 
 
@@ -14540,7 +14546,7 @@ img {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1399px) {
   .fs-md-24{
     font-size: 20px;
   }
